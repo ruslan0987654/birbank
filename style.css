@@ -1,0 +1,990 @@
+
+
+.container {
+  max-width: 1140px;
+}
+
+.ust_link {
+  color: #8b95a7;
+  font-size: 18px;
+  padding: 8px 26px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.ust_link.active,
+.ust_link:hover {
+  border-bottom: 2px solid #ed2340;
+}
+
+.nav-link {
+  color: #8b95a7;
+}
+
+.nav-link:hover {
+  color: #ed2340;
+}
+
+.navbar-brand img {
+  width: 120px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ed2340' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.esas_qutu,
+.hesablayici_qutu,
+.xidmet_qutu {
+  background: #f2f2f4;
+}
+
+.esas_qutu,
+.hesablayici_qutu,
+.hesab_netice {
+  border-radius: 14px;
+}
+
+.swiper-slide {
+  height: 360px;
+}
+
+.slayd_mezmun {
+  height: 100%;
+  padding: 24px 60px;
+}
+
+.slayd_basliq {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.05;
+}
+
+.slayd_sekil {
+  max-width: 416px;
+  width: 100%;
+}
+
+.ox_duymesi {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 36px;
+  height: 44px;
+  border: 0;
+  border-radius: 6px;
+  background: #fff;
+  color: #66717d;
+}
+
+.arrow-prev {
+  left: 0;
+}
+
+.arrow-next {
+  right: 0;
+}
+
+.mehsul_kart {
+  height: 180px;
+  overflow: hidden;
+  border: 0;
+}
+
+.mehsul_metn {
+  width: 57%;
+  position: relative;
+  z-index: 1;
+}
+
+.mehsul_kart img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 42%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom right;
+}
+
+.mehsul_kart p {
+  color: #7d8995;
+}
+
+.tetbiq_hisse {
+  padding-top: 96px;
+  background: url('https://birbank.az/file/mobile_widget_bg_0f0cb4d27c.png') center bottom / contain no-repeat;
+}
+
+.tetbiq_basliq {
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.tetbiq_duymesi {
+  min-width: 176px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.tetbiq_qr {
+  max-width: 30%;
+}
+
+.telefon_sekil {
+  display: block;
+  max-width: 352px;
+  width: 90%;
+  max-height: 320px;
+  object-fit: cover;
+  object-position: top;
+  margin: 36px auto 0;
+  mask-image: linear-gradient(black 75%, transparent);
+}
+
+.hisse_araligi {
+  margin-top: 88px;
+}
+
+.hisse_basliq {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.hesab_input {
+  border: 1px solid #d7d9dc;
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px 12px 0;
+  position: relative;
+  height: 70px;
+}
+
+.hesab_input label {
+  color: #8b95a7;
+  font-size: 12px;
+}
+
+.hesab_input input[type=number] {
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.hesab_input input[type=range] {
+  accent-color: #ed2340;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.kart_banner {
+  min-height: 312px;
+  overflow: hidden;
+  background: #202428;
+  position: relative;
+}
+
+.kart_banner img {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 35%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.banner_metn {
+  width: 60%;
+  position: relative;
+  z-index: 1;
+}
+
+.teklif_kart {
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+
+.teklif_metn {
+  width: 55%;
+  position: relative;
+  z-index: 1;
+}
+
+.teklif_kart img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 48%;
+  max-height: 90%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.teklif_basliq {
+  font-size: 40px;
+}
+
+.kampaniya_kart {
+  min-height: 0;
+  background: #777 url('https://birbank.az/file/birbank_kampaniyalar_ee36563933.webp') center / cover no-repeat;
+}
+
+.teklif_qrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.teklif_onlayn {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.teklif_depozit {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.kampaniya_kart {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.xeber_kart img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.xeber_kart .card-body {
+  min-height: 136px;
+}
+
+.xidmet_kart {
+  min-height: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.xidmet_kart div {
+  position: relative;
+  z-index: 1;
+  width: 60%;
+}
+
+.xidmet_kart img {
+  position: absolute;
+  bottom: 0;
+  right: 8%;
+  height: 100%;
+  width: 35%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.table-responsive {
+  font-size: 14px;
+}
+
+.xidmet_qutu .table {
+  --bs-table-bg: transparent;
+}
+
+.xidmet_qutu .table th {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 6px;
+}
+
+.xidmet_qutu .table td {
+  font-size: 14px;
+  padding: 9px 6px;
+  white-space: nowrap;
+}
+
+.xidmet_qutu .table td img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.xidmet_qutu .btn-dark,
+.xidmet_qutu .btn-light {
+  font-size: 14px;
+  padding: 6px 14px;
+}
+
+.xidmet_qutu .btn-light {
+  color: #8b95a7;
+}
+
+.xidmet_qutu .text-secondary {
+  font-size: 13px;
+}
+
+.xidmet_qutu .text-danger {
+  font-size: 14px;
+}
+
+.footer_link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.footer_link:hover {
+  color: #ff405a;
+}
+
+.footer_logo {
+  max-width: 260px;
+}
+
+.footer_mobil_logo {
+  max-width: 220px;
+}
+
+.footer_qr {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.footer_mobil .magaza_btn {
+  max-width: 240px;
+}
+
+.magaza_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.magaza_btn:hover {
+  color: #fff;
+  border-color: #ed2340;
+}
+
+.magaza_ikon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #33373d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ed2340;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.magaza_metn strong {
+  display: block;
+  font-size: 15px;
+  line-height: 1.1;
+}
+
+.magaza_metn span {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.footer_sag {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+}
+
+.cat_duymesi {
+  position: fixed;
+  bottom: 28px;
+  right: -0.1px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #f83abf, #ff6871);
+  color: white;
+  font-size: 22px;
+  border-radius: 50%;
+  z-index: 1060;
+}
+
+.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+.mega_menyu.dropdown-menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: linear-gradient(to right, #fff 50%, #f2f2f4 50%);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.06);
+}
+
+.mega_menyu .dropdown-item {
+  font-size: 13px;
+  color: #7d8995;
+  padding: 11px 0;
+  white-space: normal;
+}
+
+.mega_menyu .dropdown-item:hover,
+.mega_menyu .dropdown-item:focus {
+  color: #ed2340;
+  background: transparent;
+}
+
+.mega_aciqlama {
+  max-width: 280px;
+}
+
+.mega_aciqlama h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #202428;
+}
+
+.mega_aciqlama p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.mega_aciqlama .btn-danger {
+  background: #ed2340;
+  border-color: #ed2340;
+  padding: 6px 16px;
+  border-radius: 6px;
+}
+
+.mega_aciqlama .btn-danger:hover {
+  background: #d41b36;
+  border-color: #d41b36;
+}
+
+.mega_sekil {
+  width: 45%;
+  max-width: 216px;
+  max-height: 144px;
+  object-fit: contain;
+}
+
+.profil_duymesi {
+  position: fixed;
+  top: 53px;
+  left: 1%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ed2340;
+  color: #ed2340;
+  font-size: 28px;
+  border-radius: 50%;
+  z-index: 100000;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar .dropdown:hover .nav-link {
+    color: #ed2340;
+    box-shadow: inset 0 -2px #ed2340;
+  }
+
+  .navbar .dropdown .mega_menyu.show {
+    display: none;
+  }
+
+  .navbar .dropdown:hover .mega_menyu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-brand,
+  .navbar-toggler {
+    position: relative;
+    z-index: 1051;
+  }
+
+  .navbar-toggler:not(.collapsed) {
+    background: #ed2340;
+    border-color: #ed2340;
+  }
+
+  .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M7 7l16 16M23 7L7 23'/%3e%3c/svg%3e");
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh !important;
+    z-index: 1050;
+    background: #fff;
+    padding: 76px 20px 0;
+    overflow-y: auto;
+  }
+
+  .navbar-collapse.show {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar-collapse .mobil_yuxari,
+  .navbar-collapse .navbar-nav,
+  .navbar-collapse .mobil_asagi {
+    width: 100%;
+  }
+
+  .mobil_qeyd {
+    font-size: 11px;
+    color: #8b95a7;
+    margin: 0 0 4px;
+  }
+
+  .mobil_bolmeler {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 8px;
+  }
+
+  .mobil_bolmeler .ust_link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #66717d;
+    padding: 12px 8px;
+  }
+
+  .navbar-nav {
+    margin-left: 0 !important;
+    padding: 6px 0;
+  }
+
+  .navbar-nav .nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: #66717d;
+    padding: 16px 0;
+  }
+
+  .nav-link.dropdown-toggle::after {
+    display: inline-block;
+    content: "\F285";
+    font-family: "bootstrap-icons";
+    border: 0;
+    margin: 0;
+    font-size: 13px;
+    vertical-align: 0;
+  }
+
+  .nav-link.dropdown-toggle.show::after {
+    content: "\F282";
+  }
+
+  .mega_menyu.dropdown-menu {
+    position: static;
+    background: #fff;
+    box-shadow: none;
+  }
+
+  .mega_menyu .container {
+    padding: 0;
+    max-width: none;
+  }
+
+  .mega_menyu .mega_sag {
+    display: none !important;
+  }
+
+  .mega_menyu .mega_sol {
+    width: 100%;
+    padding: 0 0 0 16px;
+  }
+
+  .mega_menyu .dropdown-item {
+    font-size: 15px;
+    color: #202428;
+    padding: 20px 0;
+  }
+
+  .mobil_asagi {
+    margin-top: auto;
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+    padding: 16px 0 20px;
+  }
+
+  .mobil_asagi .btn-light {
+    background: #e9e9ec;
+    font-size: 14px;
+  }
+
+  .teklif_qrid {
+    grid-template-columns: 1fr;
+  }
+
+  .teklif_onlayn,
+  .teklif_depozit,
+  .kampaniya_kart {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .kampaniya_kart {
+    min-height: 450px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mehsul_sutun {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .mehsul_kart {
+    height: 160px;
+  }
+
+  .mehsul_metn {
+    width: 60%;
+  }
+
+  .mehsul_kart p {
+    font-size: 14px;
+  }
+
+  .teklif_kart {
+    height: 240px;
+  }
+
+  .teklif_basliq {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  .teklif_metn p {
+    font-size: 16px;
+  }
+
+  .teklif_metn a {
+    font-size: 18px !important;
+  }
+
+  .teklif_kart img {
+    width: 42%;
+  }
+
+  .kampaniya_kart {
+    min-height: 420px;
+  }
+
+  .kampaniya_kart p {
+    font-size: 16px;
+  }
+
+  .kampaniya_kart .btn {
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+
+  .footer_qr {
+    display: none;
+  }
+
+  .footer_logo_sutun {
+    flex: 0 0 100%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer_logo_sutun img {
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  .magaza_sutun {
+    flex-direction: row !important;
+  }
+
+  .magaza_sutun .magaza_btn {
+    flex: 1 1 50%;
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tetbiq_qr {
+    display: none;
+  }
+
+  .swiper-slide {
+    height: 440px;
+  }
+
+  .slayd_mezmun {
+    padding: 20px 36px;
+  }
+
+  .slayd_basliq {
+    font-size: 30px;
+  }
+
+  .slayd_sekil {
+    max-height: 180px;
+    object-fit: contain;
+  }
+
+  .mehsul_kart {
+    height: 152px;
+  }
+
+  .mehsul_metn {
+    width: 60%;
+  }
+
+  .mehsul_kart p {
+    font-size: 12px;
+  }
+
+  .tetbiq_basliq {
+    font-size: 30px;
+  }
+
+  .tetbiq_duymesi {
+    min-width: 136px;
+  }
+
+  .hisse_araligi {
+    margin-top: 56px;
+  }
+
+  .hisse_basliq {
+    font-size: 26px;
+  }
+
+  .banner_metn {
+    width: 100%;
+  }
+
+  .cat_duymesi {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+
+  .teklif_kart {
+    height: 170px;
+    padding: 20px !important;
+  }
+
+  .teklif_basliq {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .teklif_metn {
+    width: 60%;
+  }
+
+  .teklif_metn p {
+    font-size: 13px;
+  }
+
+  .teklif_kart img {
+    width: 36%;
+    max-height: 100%;
+  }
+
+  .kampaniya_kart {
+    min-height: 170px;
+    padding: 20px !important;
+  }
+
+  .kampaniya_kart p {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .kampaniya_kart .btn {
+    padding: 8px 22px;
+    font-size: 14px;
+  }
+
+  .xidmet_kart {
+    min-height: 104px;
+    padding: 16px 18px !important;
+  }
+
+  .xidmet_kart div {
+    width: 62%;
+  }
+
+  .xidmet_kart h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  .xidmet_kart p {
+    font-size: 13px;
+    margin: 0;
+  }
+
+  .xidmet_kart img {
+    width: 30%;
+    right: 4%;
+  }
+
+  .xidmet_qutu .table th,
+  .xidmet_qutu .table td {
+    font-size: 13px;
+    padding: 8px 4px;
+  }
+
+  .xidmet_qutu .table td img {
+    width: 26px;
+    margin-right: 8px;
+  }
+
+  .kart_banner {
+    min-height: 520px;
+  }
+
+  .kart_banner .hisse_basliq {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .kart_banner img {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 280px;
+    max-width: 85%;
+    height: auto;
+    max-height: none;
+  }
+
+  .magaza_btn {
+    gap: 6px;
+    padding: 6px 8px;
+    border-radius: 6px;
+  }
+
+  .magaza_ikon {
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+
+  .magaza_metn strong {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .magaza_metn span {
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  .footer_asagi {
+    flex-direction: column-reverse;
+    align-items: flex-start !important;
+  }
+
+  .footer_sag {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .footer_sag .d-flex {
+    gap: 14px !important;
+    flex-wrap: wrap;
+  }
+
+  .footer_sag .fs-4 {
+    font-size: 20px !important;
+  }
+
+  .telefon_link {
+    font-weight: 600;
+  }
+
+  .telefon_link i {
+    font-size: 18px;
+    margin-right: 3px;
+  }
+
+  .mexfilik_link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer_mobil .magaza_btn {
+    max-width: 100%;
+  }
+
+  .ox_duymesi {
+    top: 95%;
+  }
+
+  .arrow-prev {
+    left: auto;
+    right: 65px;
+  }
+
+  .arrow-next {
+    left: auto;
+    right: 10px;
+  }
+}
