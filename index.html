@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="border-bottom d-none d-lg-block">
-    <div class="container d-flex justify-content-between align-items-center">
+  <div class="header">
+    <div class="konteyner ust_sira">
       <div>
         <a class="ust_link active" href="#ana-sehife">Fiziki</a>
         <a class="ust_link" href="#xidmetler">Biznes</a>
@@ -21,9 +21,9 @@
         <a class="ust_link" href="#xeberler">Private</a>
       </div>
 
-      <div class="d-flex align-items-center gap-3 text-secondary small">
+      <div class="ust_sag">
         <span>'Birbank' brendi 'Kapital Bank' ASC-nin əmtəə nişanıdır.</span>
-        <a class="btn btn-danger" href="#xidmetler">
+        <a class="dugme dugme_qirmizi" href="#xidmetler">
           <i class="bi bi-geo-alt-fill"></i> Xidmət şəbəkəsi
         </a>
         <span>EN</span>
@@ -31,38 +31,39 @@
       </div>
     </div>
   </div>
-  <nav class="navbar navbar-expand-lg bg-white sticky-top py-3">
+
+  <nav class="navbar navbar-expand-lg yuxari_menyu">
     <div class="container">
       <a class="navbar-brand" href="#ana-sehife">
         <img src="https://birbank.az/file/new_logo_e657504d12.svg" alt="Birbank">
-        </a>
+      </a>
 
-   <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menyunu aç">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menyunu aç">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="menu">
 
-     <div class="mobil_yuxari d-lg-none">
+        <div class="mobil_yuxari">
           <p class="mobil_qeyd">'Birbank' brendi 'Kapital Bank' ASC-nin əmtəə nişanıdır.</p>
-       <div class="mobil_bolmeler">
+          <div class="mobil_bolmeler">
             <a class="ust_link active" href="#ana-sehife">Fiziki</a>
             <a class="ust_link" href="#xidmetler">Biznes</a>
             <a class="ust_link" href="#xidmetler">Invest</a>
             <a class="ust_link" href="#xeberler">Private</a>
-       </div>
+          </div>
         </div>
 
-        <ul class="navbar-nav ms-auto gap-lg-2">
+        <ul class="navbar-nav menyu_siyahi">
           <li class="nav-item"><a class="nav-link" href="#kartlar">Kartlar</a></li>
 
-          <li class="nav-item dropdown position-static">
+          <li class="nav-item dropdown mega_element">
             <a class="nav-link dropdown-toggle" href="#hesabla" data-bs-toggle="dropdown" aria-expanded="false">Kreditlər</a>
 
             <div class="dropdown-menu mega_menyu">
-              <div class="container">
-                <div class="row align-items-center">
-                  <div class="col-lg-6 py-4 mega_sol">
+              <div class="konteyner">
+                <div class="mega_sira">
+                  <div class="mega_sol">
                     <a class="dropdown-item" href="#hesabla">Nağd pul krediti</a>
                     <a class="dropdown-item" href="#hesabla">Mikro biznes krediti</a>
                     <a class="dropdown-item" href="#hesabla">Əmanət təminatlı kredit</a>
@@ -70,11 +71,11 @@
                     <a class="dropdown-item" href="#hesabla">İpoteka</a>
                   </div>
 
-                  <div class="col-lg-6 py-4 d-flex align-items-center justify-content-between gap-3 ps-lg-4 mega_sag">
+                  <div class="mega_sag">
                     <div class="mega_aciqlama">
-                      <h3 class="mb-3">Nağd pul krediti</h3>
-                      <p class="text-dark mb-3">80000 AZN dək<br>Nağd pul krediti</p>
-                      <a href="#hesabla" class="btn btn-danger">Sifariş et <i class="bi bi-chevron-right"></i></a>
+                      <h3>Nağd pul krediti</h3>
+                      <p>80000 AZN dək<br>Nağd pul krediti</p>
+                      <a href="#hesabla" class="dugme dugme_qirmizi">Sifariş et <i class="bi bi-chevron-right"></i></a>
                     </div>
                     <img class="mega_sekil" src="https://birbank.az/file/loan_money_51f62785df.png" alt="Nağd pul krediti">
                   </div>
@@ -83,24 +84,24 @@
             </div>
           </li>
 
-          <li class="nav-item dropdown position-static">
+          <li class="nav-item dropdown mega_element">
             <a class="nav-link dropdown-toggle" href="#teklifler" data-bs-toggle="dropdown" aria-expanded="false">Əmanətlər</a>
 
             <div class="dropdown-menu mega_menyu">
-              <div class="container">
-                <div class="row align-items-center">
-                  <div class="col-lg-6 py-4 mega_sol">
+              <div class="konteyner">
+                <div class="mega_sira">
+                  <div class="mega_sol">
                     <a class="dropdown-item" href="#teklifler">Depozit</a>
                     <a class="dropdown-item" href="#teklifler">Yığım hesabı</a>
                     <a class="dropdown-item" href="#teklifler">Müddətsiz depozit</a>
                     <a class="dropdown-item" href="#teklifler">Depozit seyfləri</a>
                   </div>
 
-                  <div class="col-lg-6 py-4 d-flex align-items-center justify-content-between gap-3 ps-lg-4 mega_sag">
+                  <div class="mega_sag">
                     <div class="mega_aciqlama">
-                      <h3 class="mb-3">Depozit</h3>
-                      <p class="text-dark mb-3">Yüksək faizlər əldə etməklə yanaşı, siz müqavilənin bitmə tarixinə 1 ay (30 təqvim günü) qalanadək depozit məbləğini artıra bilərsiniz.</p>
-                      <a href="#teklifler" class="btn btn-danger">Sifariş et <i class="bi bi-chevron-right"></i></a>
+                      <h3>Depozit</h3>
+                      <p>Yüksək faizlər əldə etməklə yanaşı, siz müqavilənin bitmə tarixinə 1 ay (30 təqvim günü) qalanadək depozit məbləğini artıra bilərsiniz.</p>
+                      <a href="#teklifler" class="dugme dugme_qirmizi">Sifariş et <i class="bi bi-chevron-right"></i></a>
                     </div>
                     <img class="mega_sekil" src="https://birbank.az/file/deposite_12b48c7ee4.png" alt="Depozit">
                   </div>
@@ -116,17 +117,17 @@
           <li class="nav-item"><a class="nav-link" href="#xeberler">Xəbərlər</a></li>
         </ul>
 
-        <div class="mobil_asagi d-lg-none">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <div class="d-flex gap-3 text-secondary">
+        <div class="mobil_asagi">
+          <div class="mobil_sira">
+            <div class="mobil_dil">
               <span>EN</span>
               <span>RU</span>
             </div>
-            <a class="btn btn-light" href="#xidmetler">
+            <a class="dugme dugme_aciq" href="#xidmetler">
               <i class="bi bi-geo-alt-fill"></i> Xidmət şəbəkəsi
             </a>
           </div>
-          <a class="btn btn-danger w-100 py-2" href="#tetbiq">
+          <a class="dugme dugme_qirmizi dugme_tam" href="#tetbiq">
             <i class="bi bi-box-arrow-in-right"></i> Yüklə
           </a>
         </div>
@@ -137,115 +138,115 @@
 
   <main id="ana-sehife">
 
-    <div class="container">
-      <div class="esas_qutu p-3 p-md-4 p-lg-4">
+    <div class="konteyner">
+      <div class="esas_qutu">
 
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-              <div class="row align-items-center slayd_mezmun">
-                <div class="col-md-6">
+              <div class="slayd_mezmun">
+                <div class="slayd_yazi">
                   <h2 class="slayd_basliq">Birbank Taksit ilə əlavə 5% bonus qazan</h2>
-                  <p class="fs-4 text-secondary my-4">Kampaniyaya qoşul və üstünlüklərdən yararlan</p>
-                  <a href="#teklifler" class="btn btn-light btn-lg text-danger px-4 py-3">
-                    Ətraflı <i class="bi bi-arrow-right ms-2"></i>
+                  <p class="slayd_alt">Kampaniyaya qoşul və üstünlüklərdən yararlan</p>
+                  <a href="#teklifler" class="dugme dugme_aciq dugme_boyuk slayd_dugme">
+                    Ətraflı <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="slayd_sekil_hisse">
                   <img class="slayd_sekil" src="https://birbank.az/file/Taksit_5_adaptasiya_480x304_b3f6b9ab8d.png" alt="Birbank Taksit">
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="row align-items-center slayd_mezmun">
-                <div class="col-md-6">
+              <div class="slayd_mezmun">
+                <div class="slayd_yazi">
                   <h1 class="slayd_basliq">Onlayn kredit<br>5%-dək daha sərfəli</h1>
-                  <p class="fs-4 text-secondary my-4">80 000 ₼-dək nağd pulu indi əldə et</p>
-                  <a href="#hesabla" class="btn btn-light btn-lg text-danger px-4 py-3">
-                    Kredit götür <i class="bi bi-arrow-right ms-2"></i>
+                  <p class="slayd_alt">80 000 ₼-dək nağd pulu indi əldə et</p>
+                  <a href="#hesabla" class="dugme dugme_aciq dugme_boyuk slayd_dugme">
+                    Kredit götür <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="slayd_sekil_hisse">
                   <img class="slayd_sekil" src="https://birbank.az/file/Birbank_e2e_480x304_8520fab27a.png" alt="Onlayn kredit">
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="row align-items-center slayd_mezmun">
-                <div class="col-md-6">
+              <div class="slayd_mezmun">
+                <div class="slayd_yazi">
                   <h2 class="slayd_basliq">Səyahət xərclərini millərinlə əvəz et</h2>
-                  <p class="fs-4 text-secondary my-4">Hotel və tur agentliklərində də millərinlə ödə</p>
-                  <a href="#kartlar" class="btn btn-light btn-lg text-danger px-4 py-3">
-                    Ətraflı <i class="bi bi-arrow-right ms-2"></i>
+                  <p class="slayd_alt">Hotel və tur agentliklərində də millərinlə ödə</p>
+                  <a href="#kartlar" class="dugme dugme_aciq dugme_boyuk slayd_dugme">
+                    Ətraflı <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="slayd_sekil_hisse">
                   <img class="slayd_sekil" src="https://birbank.az/file/Group_2087326021_2_fec961d77f.png" alt="Səyahət kartı">
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="row align-items-center slayd_mezmun">
-                <div class="col-md-6">
+              <div class="slayd_mezmun">
+                <div class="slayd_yazi">
                   <h2 class="slayd_basliq">“Yığ və qazan” lotereyası</h2>
-                  <p class="fs-4 text-secondary my-4">Yığ, qazan və arzularına daha da yaxınlaş</p>
-                  <a href="#teklifler" class="btn btn-light btn-lg text-danger px-4 py-3">
-                    Ətraflı <i class="bi bi-arrow-right ms-2"></i>
+                  <p class="slayd_alt">Yığ, qazan və arzularına daha da yaxınlaş</p>
+                  <a href="#teklifler" class="dugme dugme_aciq dugme_boyuk slayd_dugme">
+                    Ətraflı <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="slayd_sekil_hisse">
                   <img class="slayd_sekil" src="https://birbank.az/file/480x304_house_a69d39551c.png" alt="Yığ və qazan lotereyası">
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="row align-items-center slayd_mezmun">
-                <div class="col-md-6">
+              <div class="slayd_mezmun">
+                <div class="slayd_yazi">
                   <h2 class="slayd_basliq">Hərbçilərimizə özəl xüsusi təklif</h2>
-                  <p class="fs-4 text-secondary my-4">Nağd kreditdə daha sərfəli şərtlər</p>
-                  <a href="#hesabla" class="btn btn-light btn-lg text-danger px-4 py-3">
-                    Ətraflı <i class="bi bi-arrow-right ms-2"></i>
+                  <p class="slayd_alt">Nağd kreditdə daha sərfəli şərtlər</p>
+                  <a href="#hesabla" class="dugme dugme_aciq dugme_boyuk slayd_dugme">
+                    Ətraflı <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="slayd_sekil_hisse">
                   <img class="slayd_sekil" src="https://birbank.az/file/Cash_Loan_H_rbci_480x304_7674ae40cb.png" alt="Hərbçilərə özəl kredit">
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="row align-items-center slayd_mezmun">
-                <div class="col-md-6">
+              <div class="slayd_mezmun">
+                <div class="slayd_yazi">
                   <h2 class="slayd_basliq">Birbank Star ilə hər ay 5 gediş hədiyyə</h2>
-                  <p class="fs-4 text-secondary my-4">Birbank Star ilə üstünlüklərdən yararlan</p>
-                  <a href="#kartlar" class="btn btn-light btn-lg text-danger px-4 py-3">
-                    Ətraflı <i class="bi bi-arrow-right ms-2"></i>
+                  <p class="slayd_alt">Birbank Star ilə üstünlüklərdən yararlan</p>
+                  <a href="#kartlar" class="dugme dugme_aciq dugme_boyuk slayd_dugme">
+                    Ətraflı <i class="bi bi-arrow-right"></i>
                   </a>
-                  <a href="#kartlar" class="btn btn-light btn-lg text-danger px-4 py-3">
-                    Əldə et <i class="bi bi-arrow-right ms-2"></i>
+                  <a href="#kartlar" class="dugme dugme_aciq dugme_boyuk slayd_dugme">
+                    Əldə et <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="slayd_sekil_hisse">
                   <img class="slayd_sekil" src="https://birbank.az/file/480x304_5_91761632ac.png" alt="Birbank Star təklifi">
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="row align-items-center slayd_mezmun">
-                <div class="col-md-6">
+              <div class="slayd_mezmun">
+                <div class="slayd_yazi">
                   <h2 class="slayd_basliq">Qafqazın ilk tam inteqrasiyali rəqəmsal platforması</h2>
-                  <p class="fs-4 text-secondary my-4">Birbank ilə bütün ödənişlərin bir arada</p>
-                  <a href="#tetbiq" class="btn btn-light btn-lg text-danger px-4 py-3">
-                    Ətraflı <i class="bi bi-arrow-right ms-2"></i>
+                  <p class="slayd_alt">Birbank ilə bütün ödənişlərin bir arada</p>
+                  <a href="#tetbiq" class="dugme dugme_aciq dugme_boyuk slayd_dugme">
+                    Ətraflı <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="slayd_sekil_hisse">
                   <img class="slayd_sekil" src="https://birbank.az/file/Bir_pay0000_19_1_052deb3374.png" alt="Rəqəmsal ödənişlər">
                 </div>
               </div>
@@ -262,113 +263,103 @@
           </button>
         </div>
 
-        <div class="row g-3 g-lg-4 mt-0" id="mehsullar">
-          <div class="col-md-6 mehsul_sutun">
-            <div class="card mehsul_kart rounded-4 p-4">
-              <div class="mehsul_metn">
-                <h4>Birbank Star kartı</h4>
-                <p>Üstünlüklərlə dolu bu kartla ürəyincə xərclə, məbləği ay sonu geri qaytardıqda əlavə heç nə ödəmə</p>
-              </div>
-              <img src="https://birbank.az/file/star_kart_99e6f4ab5b.webp" alt="Birbank Star kartı">
+        <div class="mehsul_qrid" id="mehsullar">
+          <div class="mehsul_kart mehsul_boyuk">
+            <div class="mehsul_metn">
+              <h4>Birbank Star kartı</h4>
+              <p>Üstünlüklərlə dolu bu kartla ürəyincə xərclə, məbləği ay sonu geri qaytardıqda əlavə heç nə ödəmə</p>
             </div>
+            <img src="https://birbank.az/file/star_kart_99e6f4ab5b.webp" alt="Birbank Star kartı">
           </div>
 
-          <div class="col-md-6 mehsul_sutun">
-            <div class="card mehsul_kart rounded-4 p-4">
-              <div class="mehsul_metn">
-                <h4>Nağd pul krediti</h4>
-                <p>80 000 AZN-dək krediti sərfəli şərtlərlə, asanlıqla və çox qısa zamanda əldə et</p>
-              </div>
-              <img src="https://birbank.az/file/cash_loan_e585a43efc_bc3418bb12.webp" alt="Nağd pul krediti">
+          <div class="mehsul_kart mehsul_boyuk">
+            <div class="mehsul_metn">
+              <h4>Nağd pul krediti</h4>
+              <p>80 000 AZN-dək krediti sərfəli şərtlərlə, asanlıqla və çox qısa zamanda əldə et</p>
             </div>
+            <img src="https://birbank.az/file/cash_loan_e585a43efc_bc3418bb12.webp" alt="Nağd pul krediti">
           </div>
 
-          <div class="col-md-4 mehsul_sutun">
-            <div class="card mehsul_kart rounded-4 p-4">
-              <div class="mehsul_metn">
-                <h4>İstiqraz</h4>
-                <p>Yüksək gəlirli və etibarlı istiqrazlarımıza yatırım etməklə daha çox gəlir qazana bilərsən.</p>
-              </div>
-              <img src="https://birbank.az/file/bond_img_c417c1a3ce_52314cc099.webp" alt="İstiqraz">
+          <div class="mehsul_kart">
+            <div class="mehsul_metn">
+              <h4>İstiqraz</h4>
+              <p>Yüksək gəlirli və etibarlı istiqrazlarımıza yatırım etməklə daha çox gəlir qazana bilərsən.</p>
             </div>
+            <img src="https://birbank.az/file/bond_img_c417c1a3ce_52314cc099.webp" alt="İstiqraz">
           </div>
 
-          <div class="col-md-4 mehsul_sutun">
-            <div class="card mehsul_kart rounded-4 p-4">
-              <div class="mehsul_metn">
-                <h4>Depozit</h4>
-                <p>Birbank tətbiqi ilə depozit yatır, gəlirini yüksək faizlə artır</p>
-              </div>
-              <img src="https://birbank.az/file/deposit_5d3d72aa1c_ecf628dcc4.webp" alt="Depozit">
+          <div class="mehsul_kart">
+            <div class="mehsul_metn">
+              <h4>Depozit</h4>
+              <p>Birbank tətbiqi ilə depozit yatır, gəlirini yüksək faizlə artır</p>
             </div>
+            <img src="https://birbank.az/file/deposit_5d3d72aa1c_ecf628dcc4.webp" alt="Depozit">
           </div>
 
-          <div class="col-md-4 mehsul_sutun">
-            <div class="card mehsul_kart rounded-4 p-4">
-              <div class="mehsul_metn">
-                <h4>Birbank Kartı</h4>
-                <p>Bu kart sənə bol-bol bonus, ödənişlərinə rahatlıq gətirəcək</p>
-              </div>
-              <img src="https://birbank.az/file/cashback_card_665d7e50b0_a65d1febde.webp" alt="Birbank kartı">
+          <div class="mehsul_kart">
+            <div class="mehsul_metn">
+              <h4>Birbank Kartı</h4>
+              <p>Bu kart sənə bol-bol bonus, ödənişlərinə rahatlıq gətirəcək</p>
             </div>
+            <img src="https://birbank.az/file/cashback_card_665d7e50b0_a65d1febde.webp" alt="Birbank kartı">
           </div>
         </div>
 
       </div>
     </div>
 
-    <section class="tetbiq_hisse text-center" id="tetbiq">
-      <div class="container">
+    <section class="tetbiq_hisse" id="tetbiq">
+      <div class="konteyner">
         <h2 class="tetbiq_basliq">
           Yenilənmiş mobil<br>tətbiqimiz hər zaman<br>xidmətindədir.
         </h2>
 
-        <p class="fs-4 mt-4 mb-5">iOS və Android əməliyyat sistemlərində mövcuddur.</p>
+        <p class="tetbiq_alt">iOS və Android əməliyyat sistemlərində mövcuddur.</p>
 
-        <div class="d-flex justify-content-center align-items-center gap-4">
-          <div class="d-flex flex-column gap-3">
-            <a href="#tetbiq" class="btn btn-dark tetbiq_duymesi py-2">
-              <i class="bi bi-apple fs-3 me-2"></i>
-              <span class="fs-5">App Store</span><br>
-              <span class="small">mobil tətbiqi yüklə</span>
+        <div class="tetbiq_duymeler">
+          <div class="tetbiq_magaza">
+            <a href="#tetbiq" class="dugme dugme_qara tetbiq_duymesi">
+              <i class="bi bi-apple"></i>
+              <span class="tetbiq_ad">App Store</span><br>
+              <span class="tetbiq_kicik">mobil tətbiqi yüklə</span>
             </a>
 
-            <a href="#tetbiq" class="btn btn-dark tetbiq_duymesi py-2">
-              <i class="bi bi-google-play fs-3 me-2"></i>
-              <span class="fs-5">Google Play</span><br>
-              <span class="small">mobil tətbiqi yüklə</span>
+            <a href="#tetbiq" class="dugme dugme_qara tetbiq_duymesi">
+              <i class="bi bi-google-play"></i>
+              <span class="tetbiq_ad">Google Play</span><br>
+              <span class="tetbiq_kicik">mobil tətbiqi yüklə</span>
             </a>
           </div>
 
-          <img src="https://birbank.az/file/app_qr_7cfe3fc2be_c84b524da8.webp" alt="Tətbiq üçün QR kod" width="145" class="img-fluid tetbiq_qr">
+          <img src="https://birbank.az/file/app_qr_7cfe3fc2be_c84b524da8.webp" alt="Tətbiq üçün QR kod" width="145" class="tetbiq_qr">
         </div>
 
         <img class="telefon_sekil" src="https://birbank.az/file/Cover_e7fb907fcc_1_0e4b35fc47_3680f7536c.webp" alt="Birbank mobil tətbiqi">
       </div>
     </section>
 
-    <section class="container hisse_araligi" id="hesabla">
-      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
-        <h2 class="hisse_basliq m-0">Faydasını hesabla</h2>
+    <section class="konteyner hisse_araligi" id="hesabla">
+      <div class="hisse_ust hesab_ust">
+        <h2 class="hisse_basliq">Faydasını hesabla</h2>
 
         <div class="btn-group" role="group" aria-label="Hesablama növü">
-          <button class="btn btn-dark px-4" id="kreditBtn" type="button">Nağd kredit</button>
-          <button class="btn btn-light px-4" id="depozitBtn" type="button">Depozit</button>
+          <button class="btn btn-dark" id="kreditBtn" type="button">Nağd kredit</button>
+          <button class="btn btn-light" id="depozitBtn" type="button">Depozit</button>
         </div>
       </div>
 
-      <div class="hesablayici_qutu p-4 p-lg-5">
-        <div class="row justify-content-center g-4">
-          <div class="col-lg-5">
-            <h3 id="hesabBasliq" class="mb-4">Nağd krediti hesabla</h3>
+      <div class="hesablayici_qutu">
+        <div class="hesab_qrid">
+          <div class="hesab_forma">
+            <h3 id="hesabBasliq">Nağd krediti hesabla</h3>
 
-            <div class="hesab_input mb-4">
+            <div class="hesab_input">
               <label for="mebleg">Məbləğ (₼)</label>
               <input class="form-control" id="mebleg" type="number" min="300" max="80000" value="10000">
               <input id="meblegRange" type="range" min="300" max="80000" step="100" value="10000" aria-label="Məbləği dəyiş">
             </div>
 
-            <div class="hesab_input mb-4">
+            <div class="hesab_input">
               <label for="faiz">İllik faiz (%)</label>
               <input class="form-control" id="faiz" type="number" min="0" max="35" step="0.1" value="10.9">
               <input id="faizRange" type="range" min="0" max="35" step="0.1" value="10.9" aria-label="Faizi dəyiş">
@@ -381,41 +372,39 @@
             </div>
           </div>
 
-          <div class="col-lg-5">
-            <div class="hesab_netice bg-white p-4 p-lg-5 h-100">
-              <div class="d-flex gap-4 align-items-center">
-                <img src="https://birbank.az/file/cash_loan_icon_841909f33a.svg" alt="Nağd pul krediti" width="60">
-                <div>
-                  <strong class="fs-2"><span id="netice">3394.07</span> ₼</strong>
-                  <p id="neticeAdi" class="mb-0">Aylıq ödəniş</p>
-                </div>
+          <div class="hesab_netice">
+            <div class="netice_sira">
+              <img src="https://birbank.az/file/cash_loan_icon_841909f33a.svg" alt="Nağd pul krediti" width="60">
+              <div>
+                <strong class="netice_mebleg"><span id="netice">3394.07</span> ₼</strong>
+                <p id="neticeAdi">Aylıq ödəniş</p>
               </div>
-
-              <hr>
-
-              <p class="text-secondary small">
-                Hesablama nümunə xarakterlidir, nəticə yekun şərtlərdən fərqlənə bilər.
-              </p>
-
-              <a href="#teklifler" class="btn btn-danger btn-lg w-100 mt-2">Təkliflərə bax</a>
             </div>
+
+            <hr>
+
+            <p class="hesab_qeyd">
+              Hesablama nümunə xarakterlidir, nəticə yekun şərtlərdən fərqlənə bilər.
+            </p>
+
+            <a href="#teklifler" class="dugme dugme_qirmizi dugme_boyuk dugme_tam">Təkliflərə bax</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container hisse_araligi" id="kartlar">
-      <div class="kart_banner rounded-4 text-white p-4 p-lg-5">
+    <section class="konteyner hisse_araligi" id="kartlar">
+      <div class="kart_banner">
         <div class="banner_metn">
           <h2 class="hisse_basliq">Birbank kartları ilə xüsusi təklif və imkanlardan yararlan</h2>
 
-          <p class="fs-5 my-4">
+          <p>
             Visa və MasterCard® beynəlxalq ödəniş sistemlərini dəstəkləyən
             kartlarla dünyanın istənilən yerində ödənişlər etmək imkanına sahib ol.
           </p>
 
-          <a href="#mehsullar" class="btn btn-light btn-lg px-5 py-3">
-            Daha ətraflı <i class="bi bi-chevron-right ms-2"></i>
+          <a href="#mehsullar" class="dugme dugme_aciq dugme_boyuk banner_dugme">
+            Daha ətraflı <i class="bi bi-chevron-right"></i>
           </a>
         </div>
 
@@ -423,33 +412,33 @@
       </div>
     </section>
 
-    <section class="container hisse_araligi" id="teklifler">
+    <section class="konteyner hisse_araligi" id="teklifler">
       <div class="teklif_qrid">
 
-        <div class="teklif_kart teklif_onlayn rounded-4 p-4 p-lg-5" style="background: #fdf0f2;">
-          <div class="teklif_metn d-flex flex-column h-100">
+        <div class="teklif_kart teklif_onlayn">
+          <div class="teklif_metn">
             <h2 class="teklif_basliq">Onlayn<br class="d-none d-md-block"> kredit</h2>
             <p>Krediti banka gəlmədən və növbə gözləmədən əldə et</p>
-            <a class="text-danger text-decoration-none mt-auto fs-5" href="#hesabla">
+            <a class="qirmizi_link teklif_link" href="#hesabla">
               Sifariş et <i class="bi bi-arrow-right"></i>
             </a>
           </div>
           <img src="https://birbank.az/file/ezgif_com_png_to_webp_converter_8_009dab9c71.webp" alt="Onlayn kredit">
         </div>
 
-        <div class="kampaniya_kart rounded-4 p-4 p-lg-5 text-white d-flex flex-column align-items-start">
+        <div class="kampaniya_kart">
           <h2 class="teklif_basliq">Kampaniyalar</h2>
           <p>Sərfəli təklif və endirimlərimizi vaxt<br>itirmədən dəyərləndir</p>
-          <a href="#xeberler" class="btn btn-light text-danger btn-lg mt-auto">
+          <a href="#xeberler" class="dugme dugme_aciq dugme_boyuk">
             Daha ətraflı <i class="bi bi-arrow-right"></i>
           </a>
         </div>
 
-        <div class="teklif_kart teklif_depozit rounded-4 p-4 p-lg-5" style="background: #f2f2f4;">
-          <div class="teklif_metn d-flex flex-column h-100">
+        <div class="teklif_kart teklif_depozit">
+          <div class="teklif_metn">
             <h2 class="teklif_basliq">Depozit</h2>
             <p>İstər filialda, istərsə də onlayn depozit yerləşdir, qazancını çoxalt</p>
-            <a class="text-danger text-decoration-none mt-auto fs-5" href="#hesabla">
+            <a class="qirmizi_link teklif_link" href="#hesabla">
               Sifariş et <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -459,121 +448,113 @@
       </div>
     </section>
 
-    <section class="container hisse_araligi" id="xeberler">
-      <div class="d-flex justify-content-between align-items-center mb-4">
+    <section class="konteyner hisse_araligi" id="xeberler">
+      <div class="hisse_ust">
         <h2 class="hisse_basliq">Xəbərlər</h2>
-        <a class="text-danger text-decoration-none" href="#xeberler">
+        <a class="qirmizi_link" href="#xeberler">
           Bütün xəbərlər <i class="bi bi-arrow-right"></i>
         </a>
       </div>
 
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card xeber_kart h-100 rounded-4 overflow-hidden">
-            <img src="https://birbank.az/file/Boel_oed_kampaniya_1x1_1c624852a6.png" alt="Böl-ödə krediti" loading="lazy">
-            <div class="card-body p-4 d-flex flex-column">
-              <h5>Birbank-ın “Böl-ödə” krediti ilə 15 000 AZN-dək alış-verişi 6 ayadək komissiyasız hissələrə bölün</h5>
-              <p class="text-secondary mt-auto mb-0">2026-11-18</p>
-            </div>
+      <div class="xeber_qrid">
+        <div class="xeber_kart">
+          <img src="https://birbank.az/file/Boel_oed_kampaniya_1x1_1c624852a6.png" alt="Böl-ödə krediti" loading="lazy">
+          <div class="xeber_metn">
+            <h5>Birbank-ın “Böl-ödə” krediti ilə 15 000 AZN-dək alış-verişi 6 ayadək komissiyasız hissələrə bölün</h5>
+            <p class="xeber_tarix">2026-11-18</p>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card xeber_kart h-100 rounded-4 overflow-hidden">
-            <img src="https://birbank.az/file/Birbank_Private_Award_1x1_8d5ef2ff66.png" alt="Birbank Private" loading="lazy">
-            <div class="card-body p-4 d-flex flex-column">
-              <h5>Birbank Private PWM və The Banker tərəfindən Azərbaycanın ən yaxşı özəl bankı seçilib</h5>
-              <p class="text-secondary mt-auto mb-0">2026-11-16</p>
-            </div>
+        <div class="xeber_kart">
+          <img src="https://birbank.az/file/Birbank_Private_Award_1x1_8d5ef2ff66.png" alt="Birbank Private" loading="lazy">
+          <div class="xeber_metn">
+            <h5>Birbank Private PWM və The Banker tərəfindən Azərbaycanın ən yaxşı özəl bankı seçilib</h5>
+            <p class="xeber_tarix">2026-11-16</p>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card xeber_kart h-100 rounded-4 overflow-hidden">
-            <img src="https://birbank.az/file/Cash_Loan_H_rbci_1000x1000_fd3948755a.png" alt="Birbank Taksit bonusu" loading="lazy">
-            <div class="card-body p-4 d-flex flex-column">
-              <h5>Birbank Taksit kartı ilə noyabr alış-verişlərinə əlavə 5% bonus</h5>
-              <p class="text-secondary mt-auto mb-0">2026-11-11</p>
-            </div>
+        <div class="xeber_kart">
+          <img src="https://birbank.az/file/Cash_Loan_H_rbci_1000x1000_fd3948755a.png" alt="Birbank Taksit bonusu" loading="lazy">
+          <div class="xeber_metn">
+            <h5>Birbank Taksit kartı ilə noyabr alış-verişlərinə əlavə 5% bonus</h5>
+            <p class="xeber_tarix">2026-11-11</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container hisse_araligi mb-5 pb-5" id="xidmetler">
-      <h2 class="hisse_basliq mb-4">Xidmətlər</h2>
+    <section class="konteyner hisse_araligi xidmet_hisse" id="xidmetler">
+      <h2 class="hisse_basliq">Xidmətlər</h2>
 
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="xidmet_qutu rounded-4 p-4 h-100">
-            <h3>Valyuta məzənnələri</h3>
+      <div class="xidmet_qrid">
+        <div class="xidmet_qutu">
+          <h3>Valyuta məzənnələri</h3>
 
-            <div class="btn-group my-3" role="group" aria-label="Məzənnə növü">
-              <button class="btn btn-dark" type="button" id="alisBtn">Alış</button>
-              <button class="btn btn-light" type="button" id="satisBtn">Satış</button>
-            </div>
+          <div class="btn-group mezenne_secim" role="group" aria-label="Məzənnə növü">
+            <button class="btn btn-dark" type="button" id="alisBtn">Alış</button>
+            <button class="btn btn-light" type="button" id="satisBtn">Satış</button>
+          </div>
 
-            <div class="table-responsive">
-              <table class="table table-borderless align-middle">
-                <thead>
-                  <tr>
-                    <th>Valyuta</th>
-                    <th>Mərkəzi Bank</th>
-                    <th>Nağd</th>
-                    <th>Nağdsız</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <img alt="USD" width="40" height="30" src="https://birbank.az/file/usd_3b70aee56d.svg">
-                      USD
-                    </td>
-                    <td>1.7000</td>
-                    <td data-alis="1.6950" data-satis="1.7050">1.6950</td>
-                    <td data-alis="1.6960" data-satis="1.7040">1.6960</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img alt="EUR" width="32" height="24" src="https://birbank.az/file/eur_749f7bb080.svg">
-                      EUR
-                    </td>
-                    <td>1.8681</td>
-                    <td data-alis="1.8410" data-satis="1.8950">1.8410</td>
-                    <td data-alis="1.8230" data-satis="1.9000">1.8230</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img alt="GBP" width="32" height="24" src="https://birbank.az/file/gbp_446c241805.svg">
-                      GBP
-                    </td>
-                    <td>2.2436</td>
-                    <td data-alis="2.1990" data-satis="2.2900">2.1990</td>
-                    <td data-alis="2.1990" data-satis="2.2900">2.1990</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img alt="RUB" width="32" height="24" src="https://birbank.az/file/rub_81c69ee007.svg">
-                      100 RUB</td>
-                    <td>2.0687</td>
-                    <td data-alis="1.4400" data-satis="2.2000">1.4400</td>
-                    <td data-alis="1.6600" data-satis="2.2000">1.6600</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <div class="table-responsive">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th>Valyuta</th>
+                  <th>Mərkəzi Bank</th>
+                  <th>Nağd</th>
+                  <th>Nağdsız</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img alt="USD" width="40" height="30" src="https://birbank.az/file/usd_3b70aee56d.svg">
+                    USD
+                  </td>
+                  <td>1.7000</td>
+                  <td data-alis="1.6950" data-satis="1.7050">1.6950</td>
+                  <td data-alis="1.6960" data-satis="1.7040">1.6960</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img alt="EUR" width="32" height="24" src="https://birbank.az/file/eur_749f7bb080.svg">
+                    EUR
+                  </td>
+                  <td>1.8681</td>
+                  <td data-alis="1.8410" data-satis="1.8950">1.8410</td>
+                  <td data-alis="1.8230" data-satis="1.9000">1.8230</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img alt="GBP" width="32" height="24" src="https://birbank.az/file/gbp_446c241805.svg">
+                    GBP
+                  </td>
+                  <td>2.2436</td>
+                  <td data-alis="2.1990" data-satis="2.2900">2.1990</td>
+                  <td data-alis="2.1990" data-satis="2.2900">2.1990</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img alt="RUB" width="32" height="24" src="https://birbank.az/file/rub_81c69ee007.svg">
+                    100 RUB</td>
+                  <td>2.0687</td>
+                  <td data-alis="1.4400" data-satis="2.2000">1.4400</td>
+                  <td data-alis="1.6600" data-satis="2.2000">1.6600</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mt-3">
-              <p class="text-secondary mb-0">Kurslar bu tarixə təyin edilmişdir: 20-11-2026</p>
-              <a class="text-danger text-decoration-none" href="#xidmetler">
-                Bütün məzənnələr <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
+          <div class="mezenne_alt">
+            <p class="mezenne_tarix">Kurslar bu tarixə təyin edilmişdir: 20-11-2026</p>
+            <a class="qirmizi_link" href="#xidmetler">
+              Bütün məzənnələr <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </div>
 
-        <div class="col-lg-6 d-flex flex-column gap-4">
-          <div class="xidmet_qutu xidmet_kart rounded-4 p-4">
+        <div class="xidmet_sutun">
+          <div class="xidmet_qutu xidmet_kart">
             <div>
               <h3>Xidmət şəbəkəsi</h3>
               <p>Sənə ən yaxın filial və bankomatı tap</p>
@@ -581,7 +562,7 @@
             <img src="https://birbank.az/file/service_network_d79e752cee_c2ec434a57.webp" alt="Xidmət şəbəkəsi">
           </div>
 
-          <div class="xidmet_qutu xidmet_kart rounded-4 p-4">
+          <div class="xidmet_qutu xidmet_kart">
             <div>
               <h3>Necə etməli</h3>
               <p>Məhsul və xidmətlərimizdən rahat istifadə üçün təlimatlar burada</p>
@@ -589,7 +570,7 @@
             <img src="https://birbank.az/file/how_to_313efa7618_5098741f02.webp" alt="Təlimatlar">
           </div>
 
-          <div class="xidmet_qutu xidmet_kart rounded-4 p-4">
+          <div class="xidmet_qutu xidmet_kart">
             <div>
               <h3>Tez-tez verilən suallar</h3>
               <p>Ən çox verilən sualların cavablarını sənin üçün bir araya gətirdik</p>
@@ -602,15 +583,15 @@
 
   </main>
 
-  <footer class="bg-dark text-white py-5 px-4" id="elaqe">
-    <div class="container">
+  <footer class="footer_ana" id="elaqe">
+    <div class="konteyner">
 
-      <div class="row g-4 d-none d-md-flex">
-        <div class="col-lg-3 col-md-6 footer_logo_sutun">
-          <img src="https://birbank.az/file/new_logo_e657504d12.svg" alt="Birbank" class="img-fluid footer_logo">
+      <div class="footer_desktop">
+        <div class="footer_logo_sutun">
+          <img src="https://birbank.az/file/new_logo_e657504d12.svg" alt="Birbank" class="footer_logo">
         </div>
 
-        <div class="col-lg-2 col-6">
+        <div class="footer_sutun">
           <a class="footer_link" href="#kartlar">Kartlar</a>
           <a class="footer_link" href="#teklifler">Avtomobil lizinqi</a>
           <a class="footer_link" href="#xeberler">Xəbərlər</a>
@@ -618,7 +599,7 @@
           <a class="footer_link" href="#xeberler">Bloqlar</a>
         </div>
 
-        <div class="col-lg-2 col-6">
+        <div class="footer_sutun">
           <a class="footer_link" href="#xidmetler">Partnyorlar</a>
           <a class="footer_link" href="#xidmetler">Sığortalar</a>
           <a class="footer_link" href="#xidmetler">Tariflər</a>
@@ -626,7 +607,7 @@
           <a class="footer_link" href="#xidmetler">Kapital Bank Hesabatları</a>
         </div>
 
-        <div class="col-lg-2 col-6">
+        <div class="footer_sutun">
           <a class="footer_link" href="#teklifler">Kampaniyalar</a>
           <a class="footer_link" href="#elaqe">Haqqımızda</a>
           <a class="footer_link" href="#xidmetler">FAQ</a>
@@ -634,9 +615,9 @@
           <a class="footer_link" href="#elaqe">Təklif və şikayətlər</a>
         </div>
 
-        <div class="col-lg-3 col-6">
-          <div class="d-flex align-items-center gap-2">
-            <div class="d-flex flex-column gap-2 flex-grow-1 magaza_sutun">
+        <div class="footer_magaza_sutun">
+          <div class="footer_magaza">
+            <div class="magaza_sutun">
               <a href="#tetbiq" class="magaza_btn">
                 <span class="magaza_ikon"><i class="bi bi-apple"></i></span>
                 <span class="magaza_metn">
@@ -658,71 +639,68 @@
         </div>
       </div>
 
-      <div class="footer_mobil d-md-none">
-        <div class="text-center mb-4">
+      <div class="footer_mobil">
+        <div class="footer_mobil_ust">
           <img src="https://birbank.az/file/new_logo_e657504d12.svg" alt="Birbank" class="footer_mobil_logo">
         </div>
 
-        <div class="row g-3 mb-4">
-          <div class="col-6 d-flex flex-column gap-3">
-            <a class="footer_link m-0" href="#kartlar">Kartlar</a>
-            <a class="footer_link m-0" href="#teklifler">Kampaniyalar</a>
-            <a class="footer_link m-0" href="#xidmetler">Sığortalar</a>
-            <a class="footer_link m-0" href="#xeberler">Xəbərlər</a>
-            <a class="footer_link m-0" href="#xidmetler">FAQ</a>
-            <a class="footer_link m-0" href="#tetbiq">Birbank tətbiqi</a>
-            <a class="footer_link m-0" href="#xeberler">Bloqlar</a>
-            <a class="footer_link m-0" href="#elaqe">Təklif və şikayətlər</a>
+        <div class="footer_mobil_qrid">
+          <div class="footer_sutun_mobil">
+            <a class="footer_link" href="#kartlar">Kartlar</a>
+            <a class="footer_link" href="#teklifler">Kampaniyalar</a>
+            <a class="footer_link" href="#xidmetler">Sığortalar</a>
+            <a class="footer_link" href="#xeberler">Xəbərlər</a>
+            <a class="footer_link" href="#xidmetler">FAQ</a>
+            <a class="footer_link" href="#tetbiq">Birbank tətbiqi</a>
+            <a class="footer_link" href="#xeberler">Bloqlar</a>
+            <a class="footer_link" href="#elaqe">Təklif və şikayətlər</a>
           </div>
 
-          <div class="col-6 d-flex flex-column gap-3 text-end">
-            <a class="footer_link m-0" href="#xidmetler">Partnyorlar</a>
-            <a class="footer_link m-0" href="#teklifler">Avtomobil lizinqi</a>
-            <a class="footer_link m-0" href="#elaqe">Haqqımızda</a>
-            <a class="footer_link m-0" href="#xidmetler">Tariflər</a>
-            <a class="footer_link m-0" href="#tetbiq">Ninja</a>
-            <a class="footer_link m-0" href="#tetbiq">Ekosistem</a>
-            <a class="footer_link m-0" href="#xidmetler">Kapital Bank Hesabatları</a>
+          <div class="footer_sutun_mobil footer_sutun_sag">
+            <a class="footer_link" href="#xidmetler">Partnyorlar</a>
+            <a class="footer_link" href="#teklifler">Avtomobil lizinqi</a>
+            <a class="footer_link" href="#elaqe">Haqqımızda</a>
+            <a class="footer_link" href="#xidmetler">Tariflər</a>
+            <a class="footer_link" href="#tetbiq">Ninja</a>
+            <a class="footer_link" href="#tetbiq">Ekosistem</a>
+            <a class="footer_link" href="#xidmetler">Kapital Bank Hesabatları</a>
           </div>
         </div>
 
-        <div class="row g-2 mt-2">
-          <div class="col-6">
-            <a href="#tetbiq" class="magaza_btn w-100 d-flex align-items-center justify-content-center">
-              <span class="magaza_ikon"><i class="bi bi-apple"></i></span>
-              <span class="magaza_metn">
-                <strong>App Store</strong>
-                <span>mobil tətbiqi yüklə</span>
-              </span>
-            </a>
-          </div>
-          <div class="col-6">
-            <a href="#tetbiq" class="magaza_btn w-100 d-flex align-items-center justify-content-center">
-              <span class="magaza_ikon"><i class="bi bi-google-play"></i></span>
-              <span class="magaza_metn">
-                <strong>Google Play</strong>
-                <span>mobil tətbiqi yüklə</span>
-              </span>
-            </a>
-          </div>
+        <div class="footer_magaza_mobil">
+          <a href="#tetbiq" class="magaza_btn">
+            <span class="magaza_ikon"><i class="bi bi-apple"></i></span>
+            <span class="magaza_metn">
+              <strong>App Store</strong>
+              <span>mobil tətbiqi yüklə</span>
+            </span>
+          </a>
+
+          <a href="#tetbiq" class="magaza_btn">
+            <span class="magaza_ikon"><i class="bi bi-google-play"></i></span>
+            <span class="magaza_metn">
+              <strong>Google Play</strong>
+              <span>mobil tətbiqi yüklə</span>
+            </span>
+          </a>
         </div>
 
         <hr>
 
-        <div class="footer_asagi d-flex flex-wrap justify-content-between align-items-center gap-3">
-          <span class="small">© 2026 «Kapital Bank» ASC. Bütün hüquqlar qorunur.</span>
+        <div class="footer_asagi">
+          <span class="footer_huquq">© 2026 «Kapital Bank» ASC. Bütün hüquqlar qorunur.</span>
 
           <div class="footer_sag">
-            <div class="d-flex gap-3 align-items-center">
-              <a href="tel:196" class="text-danger fs-4 telefon_link"><i class="bi bi-telephone-fill"></i> 196</a>
-              <i class="bi bi-chat-square-dots-fill text-danger fs-4"></i>
-              <i class="bi bi-facebook fs-4"></i>
-              <i class="bi bi-instagram fs-4"></i>
-              <i class="bi bi-youtube fs-4"></i>
-              <i class="bi bi-linkedin fs-4"></i>
-              <i class="bi bi-tiktok fs-4"></i>
+            <div class="footer_ikonlar">
+              <a href="tel:196" class="footer_ikon footer_qirmizi telefon_link"><i class="bi bi-telephone-fill"></i> 196</a>
+              <i class="bi bi-chat-square-dots-fill footer_ikon footer_qirmizi"></i>
+              <i class="bi bi-facebook footer_ikon"></i>
+              <i class="bi bi-instagram footer_ikon"></i>
+              <i class="bi bi-youtube footer_ikon"></i>
+              <i class="bi bi-linkedin footer_ikon"></i>
+              <i class="bi bi-tiktok footer_ikon"></i>
             </div>
-            <a href="#elaqe" class="text-white small mexfilik_link">Məxfilik sənədi</a>
+            <a href="#elaqe" class="mexfilik_link">Məxfilik sənədi</a>
           </div>
         </div>
       </div>
@@ -730,7 +708,7 @@
     </div>
   </footer>
 
-  <a href="#xidmetler" class="cat_duymesi text-decoration-none" aria-label="Canlı çat">
+  <a href="#xidmetler" class="cat_duymesi" aria-label="Canlı çat">
     <i class="bi bi-chat-dots-fill"></i>
   </a>
   <a class="profil_duymesi" href="#elaqe" aria-label="Əlaqə">

@@ -1,7 +1,33 @@
-
-
 .container {
   max-width: 1140px;
+}
+
+.konteyner {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.header {
+  display: none;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.ust_sira {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ust_sag {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #6c757d;
+  font-size: 0.875em;
 }
 
 .ust_link {
@@ -15,6 +41,86 @@
 .ust_link.active,
 .ust_link:hover {
   border-bottom: 2px solid #ed2340;
+}
+
+.dugme {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.dugme_boyuk {
+  padding: 8px 16px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.dugme_tam {
+  width: 100%;
+}
+
+.dugme_qirmizi {
+  color: #fff;
+  background: #dc3545;
+  border-color: #dc3545;
+}
+
+.dugme_qirmizi:hover {
+  color: #fff;
+  background: #bb2d3b;
+  border-color: #b02a37;
+}
+
+.dugme_aciq {
+  color: #000;
+  background: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.dugme_aciq:hover {
+  color: #000;
+  background: #d3d4d5;
+  border-color: #c6c7c8;
+}
+
+.dugme_qara {
+  color: #fff;
+  background: #212529;
+  border-color: #212529;
+}
+
+.dugme_qara:hover {
+  color: #fff;
+  background: #424649;
+  border-color: #373b3e;
+}
+
+.qirmizi_link {
+  color: #dc3545;
+  text-decoration: none;
+}
+
+.qirmizi_link:hover {
+  color: #dc3545;
+}
+
+.yuxari_menyu {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: #fff;
 }
 
 .nav-link {
@@ -37,6 +143,27 @@
   box-shadow: none;
 }
 
+.menyu_siyahi {
+  margin-left: auto;
+}
+
+.mega_element {
+  position: static;
+}
+
+.mobil_sira {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.mobil_dil {
+  display: flex;
+  gap: 16px;
+  color: #6c757d;
+}
+
 .esas_qutu,
 .hesablayici_qutu,
 .xidmet_qutu {
@@ -49,19 +176,61 @@
   border-radius: 14px;
 }
 
+.esas_qutu {
+  padding: 16px;
+}
+
 .swiper-slide {
   height: 360px;
 }
 
 .slayd_mezmun {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   height: 100%;
+  margin-left: -12px;
+  margin-right: -12px;
   padding: 24px 60px;
+}
+
+.slayd_yazi,
+.slayd_sekil_hisse {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.slayd_sekil_hisse {
+  text-align: center;
 }
 
 .slayd_basliq {
   font-size: 48px;
   font-weight: bold;
   line-height: 1.05;
+}
+
+.slayd_alt {
+  margin: 24px 0;
+  color: #6c757d;
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+.slayd_dugme {
+  padding: 16px 24px;
+  color: #dc3545;
+}
+
+.slayd_dugme:hover {
+  color: #dc3545;
+}
+
+.slayd_dugme .bi,
+.banner_dugme .bi {
+  margin-left: 8px;
 }
 
 .slayd_sekil {
@@ -90,10 +259,25 @@
   right: 0;
 }
 
+.mehsul_qrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
 .mehsul_kart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
   height: 180px;
+  padding: 24px;
   overflow: hidden;
+  overflow-wrap: break-word;
+  background: #fff;
   border: 0;
+  border-radius: 16px;
 }
 
 .mehsul_metn {
@@ -118,6 +302,7 @@
 
 .tetbiq_hisse {
   padding-top: 96px;
+  text-align: center;
   background: url('https://birbank.az/file/mobile_widget_bg_0f0cb4d27c.png') center bottom / contain no-repeat;
 }
 
@@ -127,14 +312,49 @@
   line-height: 1.1;
 }
 
+.tetbiq_alt {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+.tetbiq_duymeler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.tetbiq_magaza {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .tetbiq_duymesi {
   min-width: 176px;
   height: 60px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-radius: 10px;
+}
+
+.tetbiq_duymesi .bi {
+  margin-right: 8px;
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+.tetbiq_ad {
+  font-size: 20px;
+}
+
+.tetbiq_kicik {
+  font-size: 0.875em;
 }
 
 .tetbiq_qr {
   max-width: 30%;
+  height: auto;
 }
 
 .telefon_sekil {
@@ -157,6 +377,38 @@
   font-weight: 600;
 }
 
+.hisse_ust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.hesab_ust .hisse_basliq {
+  margin: 0;
+}
+
+.hesab_ust .btn {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.hesablayici_qutu {
+  padding: 24px;
+}
+
+.hesab_qrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+
+.hesab_forma h3 {
+  margin-bottom: 24px;
+}
+
 .hesab_input {
   border: 1px solid #d7d9dc;
   border-radius: 10px;
@@ -164,6 +416,10 @@
   padding: 8px 12px 0;
   position: relative;
   height: 70px;
+}
+
+.hesab_input:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .hesab_input label {
@@ -185,10 +441,41 @@
   left: 0;
 }
 
+.hesab_netice {
+  padding: 24px;
+  background: #fff;
+}
+
+.netice_sira {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.netice_sira p {
+  margin-bottom: 0;
+}
+
+.netice_mebleg {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+.hesab_qeyd {
+  color: #6c757d;
+  font-size: 0.875em;
+}
+
+.hesab_netice .dugme_qirmizi {
+  margin-top: 8px;
+}
+
 .kart_banner {
   min-height: 312px;
+  padding: 24px;
   overflow: hidden;
+  color: #fff;
   background: #202428;
+  border-radius: 16px;
   position: relative;
 }
 
@@ -208,13 +495,27 @@
   z-index: 1;
 }
 
+.banner_metn p {
+  margin: 24px 0;
+  font-size: 20px;
+}
+
+.banner_dugme {
+  padding: 16px 48px;
+}
+
 .teklif_kart {
   height: 280px;
+  padding: 24px;
   overflow: hidden;
+  border-radius: 16px;
   position: relative;
 }
 
 .teklif_metn {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   width: 55%;
   position: relative;
   z-index: 1;
@@ -234,9 +535,29 @@
   font-size: 40px;
 }
 
+.teklif_link {
+  margin-top: auto;
+  font-size: 20px;
+}
+
 .kampaniya_kart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   min-height: 0;
+  padding: 24px;
+  color: #fff;
+  border-radius: 16px;
   background: #777 url('https://birbank.az/file/birbank_kampaniyalar_ee36563933.webp') center / cover no-repeat;
+}
+
+.kampaniya_kart .dugme {
+  margin-top: auto;
+  color: #dc3545;
+}
+
+.kampaniya_kart .dugme:hover {
+  color: #dc3545;
 }
 
 .teklif_qrid {
@@ -248,16 +569,36 @@
 .teklif_onlayn {
   grid-column: 1;
   grid-row: 1;
+  background: #fdf0f2;
 }
 
 .teklif_depozit {
   grid-column: 1;
   grid-row: 2;
+  background: #f2f2f4;
 }
 
 .kampaniya_kart {
   grid-column: 2;
   grid-row: 1 / span 2;
+}
+
+.xeber_qrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+
+.xeber_kart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 16px;
 }
 
 .xeber_kart img {
@@ -266,8 +607,44 @@
   object-fit: cover;
 }
 
-.xeber_kart .card-body {
+.xeber_metn {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
   min-height: 136px;
+  padding: 24px;
+}
+
+.xeber_tarix {
+  margin-top: auto;
+  margin-bottom: 0;
+  color: #6c757d;
+}
+
+.xidmet_hisse {
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+}
+
+.xidmet_hisse .hisse_basliq {
+  margin-bottom: 24px;
+}
+
+.xidmet_qrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+
+.xidmet_sutun {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.xidmet_qutu {
+  padding: 24px;
+  border-radius: 16px;
 }
 
 .xidmet_kart {
@@ -292,12 +669,32 @@
   object-position: bottom;
 }
 
+.mezenne_secim {
+  margin: 16px 0;
+}
+
+.mezenne_alt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.mezenne_tarix {
+  margin-bottom: 0;
+  color: #6c757d;
+  font-size: 13px;
+}
+
 .table-responsive {
   font-size: 14px;
 }
 
 .xidmet_qutu .table {
   --bs-table-bg: transparent;
+  vertical-align: middle;
 }
 
 .xidmet_qutu .table th {
@@ -329,12 +726,18 @@
   color: #8b95a7;
 }
 
-.xidmet_qutu .text-secondary {
-  font-size: 13px;
+.xidmet_qutu .qirmizi_link {
+  font-size: 14px;
 }
 
-.xidmet_qutu .text-danger {
-  font-size: 14px;
+.footer_ana {
+  padding: 48px 24px;
+  color: #fff;
+  background: #212529;
+}
+
+.footer_desktop {
+  display: none;
 }
 
 .footer_link {
@@ -351,6 +754,7 @@
 
 .footer_logo {
   max-width: 260px;
+  height: auto;
 }
 
 .footer_mobil_logo {
@@ -363,8 +767,56 @@
   object-fit: contain;
 }
 
+.footer_magaza {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.magaza_sutun {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 8px;
+}
+
+.footer_mobil_ust {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.footer_mobil_qrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.footer_sutun_mobil {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer_sutun_sag {
+  text-align: right;
+}
+
+.footer_mobil .footer_link {
+  margin: 0;
+}
+
+.footer_magaza_mobil {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 32px;
+}
+
 .footer_mobil .magaza_btn {
+  width: 100%;
   max-width: 240px;
+  justify-content: center;
 }
 
 .magaza_btn {
@@ -408,11 +860,47 @@
   font-weight: 400;
 }
 
+.footer_asagi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer_huquq {
+  font-size: 0.875em;
+}
+
 .footer_sag {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   gap: 20px;
+}
+
+.footer_ikonlar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer_ikon {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+.footer_qirmizi,
+.footer_qirmizi:hover {
+  color: #dc3545;
+}
+
+.mexfilik_link {
+  color: #fff;
+  font-size: 0.875em;
+}
+
+.mexfilik_link:hover {
+  color: #fff;
 }
 
 .cat_duymesi {
@@ -427,6 +915,7 @@
   background: radial-gradient(circle, #f83abf, #ff6871);
   color: white;
   font-size: 22px;
+  text-decoration: none;
   border-radius: 50%;
   z-index: 1060;
 }
@@ -443,6 +932,29 @@
   border-radius: 0;
   background: linear-gradient(to right, #fff 50%, #f2f2f4 50%);
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.06);
+}
+
+.mega_sira {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.mega_sol,
+.mega_sag {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 24px 12px;
+}
+
+.mega_sag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .mega_menyu .dropdown-item {
@@ -463,24 +975,27 @@
 }
 
 .mega_aciqlama h3 {
+  margin-bottom: 16px;
   font-size: 22px;
   font-weight: 400;
   color: #202428;
 }
 
 .mega_aciqlama p {
+  margin-bottom: 16px;
   font-size: 14px;
   line-height: 1.4;
+  color: #212529;
 }
 
-.mega_aciqlama .btn-danger {
+.mega_aciqlama .dugme_qirmizi {
   background: #ed2340;
   border-color: #ed2340;
   padding: 6px 16px;
   border-radius: 6px;
 }
 
-.mega_aciqlama .btn-danger:hover {
+.mega_aciqlama .dugme_qirmizi:hover {
   background: #d41b36;
   border-color: #d41b36;
 }
@@ -508,7 +1023,45 @@
   z-index: 100000;
 }
 
+@media (min-width: 768px) {
+  .esas_qutu {
+    padding: 24px;
+  }
+
+  .slayd_yazi,
+  .slayd_sekil_hisse {
+    width: 50%;
+  }
+
+  .xeber_qrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .footer_desktop {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .footer_mobil {
+    display: none;
+  }
+}
+
 @media (min-width: 992px) {
+  .ust_zolaq {
+    display: block;
+  }
+
+  .mobil_yuxari,
+  .mobil_asagi {
+    display: none;
+  }
+
+  .menyu_siyahi {
+    gap: 8px;
+  }
+
   .navbar-nav .nav-link {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -533,6 +1086,78 @@
     left: 0;
     right: 0;
     margin-top: 0;
+  }
+
+  .mega_sol,
+  .mega_sag {
+    width: 50%;
+  }
+
+  .mega_sag {
+    padding-left: 24px;
+  }
+
+  .mehsul_qrid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .mehsul_kart {
+    grid-column: span 2;
+  }
+
+  .mehsul_boyuk {
+    grid-column: span 3;
+  }
+
+  .hesablayici_qutu,
+  .hesab_netice,
+  .kart_banner,
+  .teklif_kart,
+  .kampaniya_kart {
+    padding: 48px;
+  }
+
+  .hesab_qrid {
+    grid-template-columns: repeat(2, calc(41.6667% - 14px));
+    justify-content: center;
+  }
+
+  .xidmet_qrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer_desktop {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .footer_logo_sutun,
+  .footer_magaza_sutun {
+    grid-column: span 3;
+  }
+
+  .footer_sutun {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slayd_alt,
+  .tetbiq_alt {
+    font-size: 24px;
+  }
+
+  .tetbiq_duymesi .bi {
+    font-size: 28px;
+  }
+
+  .netice_mebleg {
+    font-size: 32px;
+  }
+
+  .footer_ikon {
+    font-size: 24px;
   }
 }
 
@@ -597,7 +1222,7 @@
   }
 
   .navbar-nav {
-    margin-left: 0 !important;
+    margin-left: 0;
     padding: 6px 0;
   }
 
@@ -631,7 +1256,7 @@
     box-shadow: none;
   }
 
-  .mega_menyu .container {
+  .mega_menyu .konteyner {
     padding: 0;
     max-width: none;
   }
@@ -642,7 +1267,7 @@
 
   .mega_menyu .mega_sol {
     width: 100%;
-    padding: 0 0 0 16px;
+    padding: 24px 0 24px 16px;
   }
 
   .mega_menyu .dropdown-item {
@@ -660,9 +1285,14 @@
     padding: 16px 0 20px;
   }
 
-  .mobil_asagi .btn-light {
+  .mobil_asagi .dugme_aciq {
     background: #e9e9ec;
     font-size: 14px;
+  }
+
+  .mobil_asagi .dugme_qirmizi {
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .teklif_qrid {
@@ -682,11 +1312,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .mehsul_sutun {
-    flex: 0 0 100%;
-    width: 100%;
-  }
-
   .mehsul_kart {
     height: 160px;
   }
@@ -713,7 +1338,7 @@
   }
 
   .teklif_metn a {
-    font-size: 18px !important;
+    font-size: 18px;
   }
 
   .teklif_kart img {
@@ -728,7 +1353,7 @@
     font-size: 16px;
   }
 
-  .kampaniya_kart .btn {
+  .kampaniya_kart .dugme {
     font-size: 16px;
     padding: 10px 24px;
   }
@@ -738,10 +1363,9 @@
   }
 
   .footer_logo_sutun {
-    flex: 0 0 100%;
-    width: 100%;
+    grid-column: 1 / -1;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
   }
 
   .footer_logo_sutun img {
@@ -750,7 +1374,7 @@
   }
 
   .magaza_sutun {
-    flex-direction: row !important;
+    flex-direction: row;
   }
 
   .magaza_sutun .magaza_btn {
@@ -821,7 +1445,7 @@
 
   .teklif_kart {
     height: 170px;
-    padding: 20px !important;
+    padding: 20px;
   }
 
   .teklif_basliq {
@@ -845,7 +1469,7 @@
 
   .kampaniya_kart {
     min-height: 170px;
-    padding: 20px !important;
+    padding: 20px;
   }
 
   .kampaniya_kart p {
@@ -853,14 +1477,14 @@
     margin-bottom: 12px;
   }
 
-  .kampaniya_kart .btn {
+  .kampaniya_kart .dugme {
     padding: 8px 22px;
     font-size: 14px;
   }
 
   .xidmet_kart {
     min-height: 104px;
-    padding: 16px 18px !important;
+    padding: 16px 18px;
   }
 
   .xidmet_kart div {
@@ -937,7 +1561,7 @@
 
   .footer_asagi {
     flex-direction: column-reverse;
-    align-items: flex-start !important;
+    align-items: flex-start;
   }
 
   .footer_sag {
@@ -946,13 +1570,13 @@
     gap: 14px;
   }
 
-  .footer_sag .d-flex {
-    gap: 14px !important;
+  .footer_ikonlar {
+    gap: 14px;
     flex-wrap: wrap;
   }
 
-  .footer_sag .fs-4 {
-    font-size: 20px !important;
+  .footer_ikon {
+    font-size: 20px;
   }
 
   .telefon_link {
