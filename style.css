@@ -1611,4 +1611,7 @@
     left: auto;
     right: 10px;
   }
+  .banner_metn p {
+    font-size: 14px;
+  }
 }
